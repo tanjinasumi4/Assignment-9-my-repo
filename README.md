@@ -1,37 +1,25 @@
-# Getting Started with Create React App
+# IELTS-GO For Abroad
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+## About this site
 
-In the project directory, you can run:
+In this site you can know all about IELTS
 
-### `npm start`
+### How can Help you this site
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+Here's we are providing all information about IELTS.How to prepare yourself,IELTS scores,IELTS test types,How to research and so many things.
 
-### `npm test`
+### There are so many services
+Is this option,you can know how IELTS helps you for Study,job,migration and skill.We are providing you best service of any other.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### IELTS for work
 
-### `npm run build`
+Providing proof of your language proficiency is an important step in obtaining a visa so that you can work abroad. Language skills are key to career success, and are considered a valuable asset in addition to all the other requirements of any job.
+### IELTS for study
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+If you are interested in studying abroad, remember that many universities worldwide and all universities and colleges in the UK accept IELTS test results.
 
 If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 

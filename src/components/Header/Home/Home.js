@@ -4,9 +4,7 @@ import './Home.css';
 const Home = (props) => {
     // const{title,description,img} = props.detail;
     return (
-
-        
-        
+    
   <Col>
       <Card>
         <Card.Img variant="top" src="" />
