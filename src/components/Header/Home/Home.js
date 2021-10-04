@@ -1,24 +1,29 @@
-import React, { useEffect, useState } from 'react';
-import { Card, Col } from 'react-bootstrap';
-import './Home.css';
+import React from 'react';
+import { Row } from 'react-bootstrap';
+import { useEffect, useState } from 'react';
+import Homes from '../Homes/Homes';
+
 const Home = (props) => {
-    // const{title,description,img} = props.detail;
+    const [homes, setHomes] = useState([]);
+    useEffect(() => {
+        fetch('./homeData.JSON')
+            .then(res => res.json())
+            .then(data => setHomes(data));
+    }, []);
     return (
-    
-  <Col>
-      <Card>
-        <Card.Img variant="top" src="" />
-        <Card.Body>
-          <Card.Title></Card.Title>
-          <Card.Text>
-          
-          </Card.Text>
-        </Card.Body>
-      </Card>
-    </Col>
+        <div>
+            <Row xs={1} md={2} className="g-4">
+                {
+                    homes.map(home => <Homes
+                        key={home.id}
+                        home={home}
+                    ></Homes>)
+                }
+            </Row >
+        </div>
 
 
-       
+
     );
 };
 

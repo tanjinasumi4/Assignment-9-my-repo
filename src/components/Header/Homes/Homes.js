@@ -1,14 +1,12 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Card, Col } from 'react-bootstrap';
-import './Service.css';
 
-const Service = (props) => {
-    const { title, description, price, img } = props.service
+const Homes = (props) => {
+    const { title, description, price, img } = props.home
+
     return (
-        
         <div>
-            
-            <Col className="color">
+            <Col>
                 <Card border="secondary">
                     <Card.Img variant="top" src={img} />
                     <Card.Body>
@@ -20,8 +18,9 @@ const Service = (props) => {
                     </Card.Body>
                 </Card>
             </Col>
+
         </div>
     );
 };
 
-export default Service;
+export default Homes;

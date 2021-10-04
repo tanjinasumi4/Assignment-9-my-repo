@@ -13,26 +13,30 @@ import Service from './components/Header/Service/Service';
 import NotFound from './components/Header/NotFound/NotFound';
 import Home from './components/Header/Home/Home';
 import React, { useEffect, useState } from 'react';
+import Homes from './components/Header/Homes/Homes';
+import Services from './components/Header/Services/Services';
+import Footer from './components/Header/Footer/Footer';
 
 
 function App() {
-  const [detail,setDetail] = useState([]);
-
-    useEffect(() => {
-        fetch('./data.JSON')
-        .then(res => res.json())
-        .then(data => setDetail(data));
-    }, [])
+ 
   return (
     <div>
-      <Header></Header>
+      
      <Router>
+     <Header></Header>
        <Switch>
          <Route exact path="/">
-          <Header></Header>
+          <Home></Home>
+         </Route>
+         <Route exact path="/home">
+          <Home></Home>
          </Route>
          <Route path="/about">
            <About></About>
+         </Route>
+         <Route path="/services">
+           <Services></Services>
          </Route>
          <Route path="/test">
           <Test></Test>
@@ -43,22 +47,12 @@ function App() {
          <Route path="/researchers">
           <Researcher></Researcher>
          </Route>
-         <Route path="/services">
-          <Service></Service>
-         </Route>
          <Route path="*">
           <NotFound></NotFound>
          </Route>
        </Switch>
+       <Footer></Footer>
      </Router>
-     <Home></Home>
-     <Row xs={1} md={3} className="g-4">
-  {
-    detail.map(details => <Home detail={details}></Home>)
-  }
-</Row>
-
-
     </div>
   );
 }
